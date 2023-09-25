@@ -34,7 +34,7 @@ console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
 
 function batchTimeouts(callbacks, delays) {
   let arr = [];
-  for(let i = 0; i < callbacks.length; i++){
+  for (let i = 0; i < callbacks.length; i++) {
     arr.push(setTimeout(callbacks[i], delays[i]));
   }
   return arr;
@@ -53,7 +53,7 @@ function batchTimeouts(callbacks, delays) {
 // //  'hi' after 500 ms
 // //  'WHAT?' after 900 ms
 
-console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
+// console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = batchTimeouts;
